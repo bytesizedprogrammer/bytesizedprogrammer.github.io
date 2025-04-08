@@ -1,0 +1,225 @@
+.colorMe {
+    color: white;
+}
+
+#workpls {
+    position: relative; /* required for z-index to work */
+    border-radius: 1020px;
+    transform: translateX(5%) translateY(16%);
+    width: 90% !important;
+    z-index: 9999;
+}
+
+
+.centeringfr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    --abcde-primary-color: #0a192f;
+    --bcdef-secondary-color: #64ffda;
+    --cdfgh-accent-color: #FF5E5B; 
+    --efghi-dark-navy: #020c1b;
+    --fghij-navy: #0a192f;
+    --ghijk-light-navy: #112240;
+    --hijkl-lightest-navy: #233554;
+    --ijklm-navy-shadow: rgba(2, 12, 27, 0.7);
+    --jklmn-slate: #8892b0;
+    --klmno-light-slate: #a8b2d1;
+    --lmnop-lightest-slate: #ccd6f6;
+    --mnopq-white: #e6f1ff;
+    --nopqr-green-tint: rgba(100, 255, 218, 0.1);
+    --opqrs-accent-tint: rgba(255, 94, 91, 0.1);
+    --pqrst-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --rstuv-font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
+    --stuvw-font-sans: 'Inter', 'San Francisco', 'SF Pro Text', sans-serif;
+    --tuvwx-font-heading: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--stuvw-font-sans);
+    scroll-behavior: smooth;
+}
+
+html, body {
+    background-color: var(--fghij-navy);
+    color: var(--jklmn-slate);
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--fghij-navy);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--ghijk-light-navy);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bcdef-secondary-color);
+}
+
+
+.xjzphb-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.section:nth-child(even) {
+    background: linear-gradient(180deg, var(--fghij-navy) 0%, var(--efghi-dark-navy) 100%);
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--efghi-dark-navy), var(--bcdef-secondary-color), var(--efghi-dark-navy));
+    opacity: 0.3;
+}
+
+
+.bwvjxd-numbered-heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0 50px;
+    width: 100%;
+    font-size: clamp(26px, 5vw, 32px);
+    font-family: var(--tuvwx-font-heading);
+    font-weight: 700;
+    color: var(--lmnopq-lightest-slate);
+    letter-spacing: 0.5px;
+}
+
+.bwvjxd-numbered-heading::before {
+    position: relative;
+    margin-right: 10px;
+    color: var(--bcdef-secondary-color);
+    font-family: var(--rstuv-font-mono);
+    font-size: clamp(16px, 3vw, 22px);
+    font-weight: 400;
+}
+
+.bwvjxd-numbered-heading::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background: linear-gradient(90deg, var(--bcdef-secondary-color), transparent);
+}
+
+.bwvjxd-numbered-heading.about::before { content: '02.'; }
+.bwvjxd-numbered-heading.education::before { content: '03.'; }
+.bwvjxd-numbered-heading.experience::before { content: '04.'; }
+.bwvjxd-numbered-heading.skills::before { content: '05.'; }
+.bwvjxd-numbered-heading.certifications::before { content: '06.'; }
+.bwvjxd-numbered-heading.organizations::before { content: '06.'; }
+.bwvjxd-numbered-heading.contact::before { content: '07.'; }
+
+.qvxdhn-btn {
+    display: inline-block;
+    color: var(--bcdef-secondary-color);
+    background-color: transparent;
+    border: 1px solid var(--bcdef-secondary-color);
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    font-family: var(--rstuv-font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--pqrst-transition);
+    margin: 20px 10px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.qvxdhn-btn:hover {
+    background-color: var(--nopqr-green-tint);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    transition: var(--pqrst-transition);
+    box-shadow: 0 10px 30px -10px var(--ijklm-navy-shadow);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+
+/* Recolor the button */
+.qvxdhn-btn.zbvknw-contact-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-flex;
+    align-items: center; /* Vertically align icon and text */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Change icon color */
+.qvxdhn-btn.zbvknw-contact-btn .kfdjzn-btn-icon i {
+    color: white; /* Icon color */
+    margin-left: 8px; /* Space between text and icon */
+}
+
+/* Hover effect */
+.qvxdhn-btn.zbvknw-contact-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+.project-move-down {
+    margin-top: 10%;
+}
